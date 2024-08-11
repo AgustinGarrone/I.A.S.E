@@ -3,6 +3,7 @@ import { Navbar } from "../../../ui/navbar"
 import Banner from "./components/banner"
 import { Clients } from "./components/clients"
 import { Services } from "../../../ui/services"
+import { Footer } from "../../../ui/footer"
 
 
 export const HomePage = () => {
@@ -13,6 +14,7 @@ export const HomePage = () => {
             <Banner/>
             <Clients/>
             <Services/>
+            <Footer/>
         </Flex>
     )
 }

@@ -1,7 +1,7 @@
 import { Button, Flex, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import { CurveSeparator } from "../separator";
-import { Experience } from "../experience";
+import { Experience } from "./experience";
 
 const Banner = () => {
   return (
