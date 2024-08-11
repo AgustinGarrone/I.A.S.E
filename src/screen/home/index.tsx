@@ -1,17 +1,18 @@
 import { Flex } from "@chakra-ui/react"
 import { Navbar } from "../../../ui/navbar"
 import Banner from "./components/banner"
-import { CurveSeparator } from "./components/separator"
 import { Clients } from "./components/clients"
+import { Services } from "../../../ui/services"
 
 
 export const HomePage = () => {
 
     return (
-        <Flex direction="column" alignItems="center" width="100%" h="100vh">
+        <Flex overflowY="hidden" direction="column" alignItems="center" width="100%" minH="100vh">
             <Navbar/>
             <Banner/>
             <Clients/>
+            <Services/>
         </Flex>
     )
 }

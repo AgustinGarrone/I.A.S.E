@@ -4,7 +4,7 @@ export const CurveSeparator = () => {
 
     return (
         <Flex className="curve_separator"
-        backgroundColor="#3b548c"
+        backgroundColor="#261a5c"
         borderTopLeftRadius="500% 1000%"
         borderTopRightRadius="500% 1000%"
         position="absolute"
