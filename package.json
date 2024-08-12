@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
     "@splidejs/react-splide": "^0.7.12",
+    "axios": "^1.7.3",
     "framer-motion": "^11.3.24",
     "next": "14.2.5",
     "react": "^18",

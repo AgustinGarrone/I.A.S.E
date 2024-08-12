@@ -2,6 +2,7 @@ import { Button, Flex, Text } from "@chakra-ui/react";
 
 import { ServiceCard } from "./card";
 import { SERVICES } from "./data";
+import { MenuLabel } from "../menuLabel";
 
 export const Services = () => {
   return (
@@ -14,12 +15,8 @@ export const Services = () => {
       alignItems="center"
       justifyContent="center"
     >
-      <Flex ml="10ema" alignItems="center" mt="4em" justifyContent="flex-start">
-        <Text fontSize="2rem" color="white">
-          Nuestros Servicios
-        </Text>
-      </Flex>
-      <Flex gap="2em" alignItems="center" justifyContent="flex-start">
+      <MenuLabel title="NUESTROS SERVICIOS"/>
+      <Flex gap="2em" alignItems="center" w="77%" justifyContent="flex-start">
         {SERVICES.map((s, index) => {
           return <ServiceCard {...s} key={index} />;
         })}

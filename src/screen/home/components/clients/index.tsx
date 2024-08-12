@@ -8,12 +8,13 @@ export const Clients = () => {
     return (
         <Flex direction="column"
         w="100%"
+        gap="2em"
         zIndex="100"
-        h="15em"
+        h="20em"
         alignItems="center"
         justifyContent="center"
         backgroundImage="linear-gradient(to bottom, #261a5c, black)">
-            <Text color="white">Confian en I.A.S.E</Text>
+            <Text fontSize="1.2rem" color="white">CONFÍAN EN I.A.S.E</Text>
         <SimpleCarrousel/>
         </Flex>
     )

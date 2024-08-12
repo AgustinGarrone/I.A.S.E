@@ -6,15 +6,6 @@ import haras from "../../../public/clients/haras.png";
 import gb from "../../../public/clients/grand-bell.png"
 
 export const SimpleCarrousel = () => {
-    const settings = {
-        type       : 'fade', // Efecto de desvanecimiento
-        perPage:1 ,
-        perMove: 1,
-        pagination: false, // Muestra los puntos de paginación
-        arrows     : false, // Oculta las flechas de navegación
-        autoplay   : true, // Habilita el autoplay
-        speed: 300,
-      };
 
   return (
     <Flex>
@@ -22,13 +13,15 @@ export const SimpleCarrousel = () => {
               perPage: 1,
               perMove: 1,
               gap: "3em",
-              interval:5000,
+              interval:1500,
               autoplay:true,
               arrows: false,
-              width: "70vw", // Ajusta la altura según tus necesidades
+              width: "10em", 
               type: "fade",
               resetProgress: true,
+              drag: false,
               height: "20em",
+              pagination:false,
               rewind:true,
             }}>
         <SplideSlide>
