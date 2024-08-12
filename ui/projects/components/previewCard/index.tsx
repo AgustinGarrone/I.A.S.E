@@ -62,7 +62,7 @@ export const PreviewCard: FC<PreviewCardProps> = ({
         <Text fontSize={{md:"2rem",xl:"3rem"}}  textAlign="left">
           {company.toUpperCase()}
         </Text>
-        <Text fontSize=".8rem" textAlign="left">
+        <Text fontSize={{base:".6rem" , md:".8rem"}} textAlign="left">
           {description}
         </Text>
         <Flex alignSelf="flex-end" mt="1em">
