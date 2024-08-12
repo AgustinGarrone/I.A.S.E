@@ -2,21 +2,29 @@
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { Button, Flex, Img, Text } from "@chakra-ui/react";
 import { FC } from "react";
+import 'animate.css';
+
+
 
 type PreviewCardProps = {
   company: string;
   img: string;
   description: string;
+  animationName: string
 };
 
 export const PreviewCard: FC<PreviewCardProps> = ({
   company,
   img,
   description,
+  animationName
 }) => {
+
   return (
     <Flex
-      position="relative"
+    className={animationName}
+    border="0.2px solid gray"
+    position="relative"
       width="100%" // Ajusta el tamaño según tus necesidades
       height="100%" // Ajusta el tamaño según tus necesidades
       overflow="hidden"

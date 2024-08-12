@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import 'animate.css';
 
 const nunito = Nunito_Sans({ subsets: ["latin"] });
 

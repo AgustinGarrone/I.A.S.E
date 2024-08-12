@@ -12,7 +12,8 @@ const Banner = () => {
       alignItems="center"
       justifyContent="flex-start"
       w="100%"
-      h="130vh"
+      //h={{ xl:"160vh" , "2xl":"130vh"}}
+      h={{xl:"80em"}}
       overflow="hidden"
       backgroundImage="url('/bg-planet.png')"
       backgroundSize="cover"
@@ -49,7 +50,7 @@ const Banner = () => {
           ideas en apps
         </Text>
       </Flex>
-      <Heading fontSize="3rem" fontWeight="normal" zIndex="2" color="white">
+      <Heading className="animate__animated animate__pulse animate__infinite" fontSize="3rem" fontWeight="normal" zIndex="2" color="white">
         ACERCA EL FUTURO CON TECNOLOGÍA.
       </Heading>
       <Text fontSize="1.2rem" zIndex="2" color="white">

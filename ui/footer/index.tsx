@@ -69,39 +69,41 @@ export const Footer = () => {
       <Divider colorScheme="gray" orientation="vertical" />
 
       {/* Sección 3: Ubicación */}
-      <Flex alignItems="center" direction="column" textAlign="center" w="33.3%">
-        <Flex alignItems="center" justifyContent="center">
+      <Flex alignItems="center" justifyContent="center" gap="1em" w="33.3%">
+        <Flex alignItems="center" justifyContent="center" w="20%" gap="1em">
           <Img
             src={locationIcon.src}
             alt="Icono de ubicación"
-            boxSize="50px"
+            boxSize={{xl:"50px" , "2xl":"50px"}}
             objectFit="contain"
           />
-          <Text fontSize="1.5rem" fontWeight="bolder">
-            La Plata , Argentina
-          </Text>
+          
         </Flex>
-        <Flex direction="column" alignItems="center" justifyContent="center">
+        <Flex direction="column" alignItems="flex-start" justifyContent="center">
+        <Text fontSize="1.4rem" fontWeight="bolder">
+            Buenos Aires
+          </Text>
           <Text mt="2">av. A.M. De Justo 740 P.3 Of.1</Text>
         </Flex>
       </Flex>
       {/* Sección 4: Otra ubicación */}
       <Divider colorScheme="gray" orientation="vertical" />
 
-      <Flex alignItems="center" direction="column" textAlign="center" w="33.3%">
-        <Flex alignItems="center" justifyContent="center">
+      <Flex alignItems="center" justifyContent="center" gap="1em" w="33.3%">
+        <Flex alignItems="center" justifyContent="center" w="20%" gap="1em">
           <Img
             src={locationIcon.src}
             alt="Icono de ubicación"
-            boxSize="50px"
+            boxSize={{xl:"50px" , "2xl":"50px"}}
             objectFit="contain"
           />
-          <Text fontSize="1.5rem" fontWeight="bolder">
-            Puerto Madero , Argentina
-          </Text>
+          
         </Flex>
-        <Flex direction="column" alignItems="center" justifyContent="center">
-          <Text mt="2">Av. 38 # 394 La Plata-Bs. As</Text>
+        <Flex direction="column" alignItems="flex-start" justifyContent="center">
+        <Text fontSize="1.4rem" fontWeight="bolder">
+            La Plata
+          </Text>
+          <Text mt="2">av. 38 n 999</Text>
         </Flex>
       </Flex>
     </Flex>

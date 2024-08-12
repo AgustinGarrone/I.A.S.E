@@ -13,6 +13,7 @@ export const SuccessfulProjects = () => {
       alignItems="center"
       justifyContent="center"
       gap="3em"
+      mt="6em"
     >
       <MenuLabel title=" PROYECTOS EXITOSOS"/>
       <Grid
@@ -25,7 +26,7 @@ export const SuccessfulProjects = () => {
       >
         <GridItem gridArea="1/1/3/2">
           {/* Elemento que ocupa la primera columna y dos filas */}
-          <PreviewCard {...PREVIEW_PROJECTS_DATA[0]} />
+          <PreviewCard {...PREVIEW_PROJECTS_DATA[0] } />
         </GridItem>
 
         <GridItem gridArea=" 1 / 2 / 2 / 3">

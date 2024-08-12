@@ -10,7 +10,7 @@ import { SuccessfulProjects } from "../../../ui/projects"
 export const HomePage = () => {
 
     return (
-        <Flex overflowY="hidden" direction="column" alignItems="center" width="100%" minH="100vh">
+        <Flex overflowY="hidden" bgColor="black" direction="column" alignItems="center" width="100%" minH="100vh">
             <Navbar/>
             <Banner/>
             <Clients/>

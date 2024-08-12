@@ -3,7 +3,7 @@ import { Flex, Text } from "@chakra-ui/react";
 export const Experience = () => {
   return (
     <Flex
-      mt="14em"
+      mt={{ xl: "10em", "2xl": "14em" }}
       zIndex="100"
       color="white"
       direction="column"
@@ -14,6 +14,7 @@ export const Experience = () => {
       <Text fontSize="2rem">Nuestra Experiencia</Text>
       <Flex gap="2em">
         <Flex
+          className="animate__animated animate__fadeInLeft"
           direction="column"
           alignItems="center"
           borderRadius="20px"
@@ -32,6 +33,7 @@ export const Experience = () => {
           </Text>
         </Flex>
         <Flex
+          className="animate__animated animate__fadeInRight"
           direction="column"
           alignItems="center"
           justifyContent="center"
