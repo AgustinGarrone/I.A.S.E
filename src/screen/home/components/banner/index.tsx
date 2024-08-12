@@ -6,7 +6,7 @@ import { Experience } from "./experience";
 const Banner = () => {
   return (
     <Flex
-      mt="5em"
+      mt={{xl : "1em", "2xl":"5em"}}
       direction="column"
       gap="1.5em"
       alignItems="center"
