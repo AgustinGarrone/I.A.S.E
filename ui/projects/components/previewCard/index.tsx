@@ -39,7 +39,7 @@ export const PreviewCard: FC<PreviewCardProps> = ({
         objectFit="cover"
         width="100%"
         height="100%"
-        filter="brightness(30%)" // Oscurece la imagen
+        filter="brightness(42%)" // Oscurece la imagen
         position="absolute"
         top="0"
         left="0"
@@ -66,7 +66,7 @@ export const PreviewCard: FC<PreviewCardProps> = ({
           {description}
         </Text>
         <Flex alignSelf="flex-end" mt="1em">
-            <Button rightIcon={<ArrowForwardIcon />}  border="1px solid white" borderRadius="50px" colorScheme="blackAlpha">Descubre Más</Button>
+            <Button rightIcon={<ArrowForwardIcon />} border="1px solid white" borderRadius="50px" colorScheme="blackAlpha">Descubre Más</Button>
         </Flex>
       </Flex>
     </Flex>

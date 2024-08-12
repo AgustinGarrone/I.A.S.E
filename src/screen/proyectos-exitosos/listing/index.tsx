@@ -73,9 +73,11 @@ export const ProjectList = () => {
       </Text>
       {error && <p>{error}</p>}
       <Flex
+        w="80%"
         alignItems="center"
         direction={{ base: "column", md: "row" }}
-        justifyContent="center"
+        justifyContent="flex-start"
+        wrap="wrap"
         gap="2em"
       >
         {projectData.map((project, index) => {

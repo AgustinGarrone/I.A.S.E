@@ -5,24 +5,25 @@ export const ProjectCard = ({ project }: { project: ProjectData }) => {
   return (
     <Flex
       direction="column"
-      borderRadius="30px"
+      borderRadius="20px"
       bg="#130d2e"
-      h="40em"
-      w={{base:"100%" , md:"25em"}}
-      p="4"
+      h="41em"
+      w={{base:"100%" , md:"27em"}}
+      border="1px solid blue"
       boxShadow="lg"
       key={project.title}
     >
       <Img
         src={project.img}
         alt={project.title}
-        borderRadius="md"
+        borderRadius="20px 20px 0 0"
         mb="4"
-        objectFit="cover"
+        objectFit="fill"
         h="50%"
         w="100%"
       />
 
+      <Flex p={4} direction="column" alignItems="flex-start" justifyContent="flex-start">
       <Heading as="h2" fontSize="1.5rem" color="white" mb="2">
         {project.title}
       </Heading>
@@ -31,7 +32,7 @@ export const ProjectCard = ({ project }: { project: ProjectData }) => {
         {project.company}
       </Text>
 
-      <Text color="gray.200" mb="4" fontSize=".8rem" noOfLines={3}>
+      <Text color="gray.200" mb="4" fontSize=".8rem" noOfLines={7}>
         {project.description}
       </Text>
 
@@ -39,7 +40,7 @@ export const ProjectCard = ({ project }: { project: ProjectData }) => {
         {project.labels.map((label, idx) => (
           <Badge
             key={idx}
-            colorScheme="teal"
+            colorScheme='purple'
             variant="outline"
             fontSize="sm"
             px="2"
@@ -48,6 +49,7 @@ export const ProjectCard = ({ project }: { project: ProjectData }) => {
             {label}
           </Badge>
         ))}
+      </Flex>
       </Flex>
     </Flex>
   );
