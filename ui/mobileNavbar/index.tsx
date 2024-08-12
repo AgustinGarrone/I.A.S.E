@@ -1,9 +1,16 @@
-
-
-'use client'
-import { Box, Button, Flex, IconButton, Img, Link, Stack, useDisclosure } from "@chakra-ui/react";
+"use client";
+import {
+  Box,
+  Button,
+  Flex,
+  IconButton,
+  Img,
+  Link,
+  Stack,
+  useDisclosure,
+} from "@chakra-ui/react";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
-import logo from "../../public/logo.png"
+import logo from "../../public/logo.png";
 
 export const MobileNavbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -74,7 +81,16 @@ export const MobileNavbar = () => {
           <Link href="/nosotros" onClick={onClose}>
             Nosotros
           </Link>
-          <Button colorScheme="teal" variant="solid" width="100%" onClick={onClose}>
+          <Link onClick={onClose} href="/proyectos-exitosos">
+            Proyectos exitosos
+          </Link>
+
+          <Button
+            colorScheme="teal"
+            variant="solid"
+            width="100%"
+            onClick={onClose}
+          >
             Cotizar Proyecto
           </Button>
         </Stack>

@@ -1,14 +1,10 @@
-"use client";
+'use client'
 import { Flex, useBreakpointValue } from "@chakra-ui/react";
-import { Navbar } from "../../../ui/navbar";
-import Banner from "./components/banner";
-import { Clients } from "./components/clients";
-import { Services } from "../../../ui/services";
-import { Footer } from "../../../ui/footer";
-import { SuccessfulProjects } from "../../../ui/projects";
 import { MobileNavbar } from "../../../ui/mobileNavbar";
+import { Navbar } from "../../../ui/navbar";
+import { Footer } from "../../../ui/footer";
 
-export const HomePage = () => {
+export const ProjectsPage = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
 
   return (
@@ -21,10 +17,7 @@ export const HomePage = () => {
       minH="100vh"
     >
       {isMobile ? <MobileNavbar /> : <Navbar />}
-      <Banner />
-      <Clients />
-      <Services />
-      <SuccessfulProjects />
+
       <Footer />
     </Flex>
   );

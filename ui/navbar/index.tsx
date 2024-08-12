@@ -38,6 +38,9 @@ export const Navbar = () => {
         <Box as="li">
           <Link href="/nosotros">Nosotros</Link>
         </Box>
+        <Box as="li">
+          <Link href="/proyectos-exitosos">Proyectos exitosos</Link>
+        </Box>
         <Button colorScheme="teal" variant="solid">
           Cotizar Proyecto
         </Button>
