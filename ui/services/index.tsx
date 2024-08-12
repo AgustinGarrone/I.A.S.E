@@ -12,12 +12,12 @@ export const Services = () => {
       h={{md:"45em",xl:"40em"}}
       direction="column"
       gap="4em"
-      mt={{ md: "1em", xl: 0 }}
+      mt={{  md: "1em", xl: 0 }}
       alignItems="center"
       justifyContent="center"
     >
       <MenuLabel title="NUESTROS SERVICIOS" />
-      <Flex gap="2em" alignItems="center" w="77%" justifyContent="flex-start">
+      <Flex gap="2em" alignItems="center" direction={{base:"column" , md:"row"}} w="77%" justifyContent="flex-start">
         {SERVICES.map((s, index) => {
           return <ServiceCard {...s} key={index} />;
         })}

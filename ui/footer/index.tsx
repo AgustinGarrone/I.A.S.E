@@ -6,17 +6,18 @@ export const Footer = () => {
   return (
     <Flex
       w="100%"
-      h="14em"
+      minH="14em"
       as="footer"
-      direction="row"
+      direction={{base:"column", md:"row"}}
       alignItems="center"
-      justifyContent="space-around"
+      justifyContent={{base:"center" , md:"space-around"}}
       p="4"
       bg="gray.800"
       color="white"
+      gap={{base:"2em", md:"0"}}
     >
       {/* Sección 1: Logo */}
-      <Flex direction="column" w="33.3%" alignItems="center">
+      <Flex direction="column" w={{base:"100%" , md:"33.3%"}} alignItems="center" justifyContent="center">
         <Img
           src={logo.src}
           alt="Logo de la marca"
@@ -28,8 +29,8 @@ export const Footer = () => {
       {/* Sección 2: Contacto y redes sociales */}
       <Flex
         direction="column"
-        w="33.3%"
-        alignItems="flex-start"
+        w={{base:"100%" , md:"33.3%"}}
+        alignItems={{base:"center" , md:"flex-start" }}justifyContent="center"
         textAlign="center"
       >
         <Text>Escribenos a </Text>
@@ -72,12 +73,12 @@ export const Footer = () => {
       <Divider colorScheme="gray" orientation="vertical" />
 
       {/* Sección 3: Ubicación */}
-      <Flex alignItems="center" justifyContent="flex-start" gap="1em" w="33.3%">
+      <Flex alignItems="center" justifyContent="flex-start" gap="1em"  w={{base:"100%" , md:"33.3%"}}>
         <Flex alignItems="center" justifyContent="center" w="20%" gap="1em">
           <Img
             src={locationIcon.src}
             alt="Icono de ubicación"
-            boxSize={{xl:"50px" , "2xl":"50px"}}
+            boxSize={{base:"40px", xl:"50px" , "2xl":"50px"}}
             objectFit="contain"
           />
           
@@ -92,12 +93,12 @@ export const Footer = () => {
       {/* Sección 4: Otra ubicación */}
       <Divider colorScheme="gray" orientation="vertical" />
 
-      <Flex alignItems="center" justifyContent="flex-start"  gap="1em" w="33.3%">
+      <Flex alignItems="center" justifyContent="flex-start"  gap="1em"  w={{base:"100%" , md:"33.3%"}}>
         <Flex alignItems="center" justifyContent="center" w="20%" gap="1em">
           <Img
             src={locationIcon.src}
             alt="Icono de ubicación"
-            boxSize={{xl:"50px" , "2xl":"50px"}}
+            boxSize={{base:"40px", xl:"50px" , "2xl":"50px"}}
             objectFit="contain"
           />
           

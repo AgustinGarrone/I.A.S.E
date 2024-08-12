@@ -25,8 +25,8 @@ export const PreviewCard: FC<PreviewCardProps> = ({
     className={animationName}
     border="0.2px solid gray"
     position="relative"
-      width="100%" // Ajusta el tamaño según tus necesidades
-      height="100%" // Ajusta el tamaño según tus necesidades
+      width="100%"
+      height="100%"
       overflow="hidden"
       borderRadius="md"
       boxShadow="md"
@@ -34,7 +34,7 @@ export const PreviewCard: FC<PreviewCardProps> = ({
       alignItems="flex-end"
     >
       <Img
-        src={img} // Cambia esto por la ruta de tu imagen
+        src={img} 
         alt="Background Image"
         objectFit="cover"
         width="100%"

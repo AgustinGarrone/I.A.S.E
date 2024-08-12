@@ -8,8 +8,8 @@ export const Navbar = () => {
       align="center"
       justify="space-between"
       h="6em"
-      pl={{md: "7em",xl:"10em"}}
-      pr={{md: "7em",xl:"10em"}}
+      pl="10em"
+      pr="10em"
       position="fixed"
       top="0"
       left="0"

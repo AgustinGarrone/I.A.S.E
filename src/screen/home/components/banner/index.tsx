@@ -1,19 +1,32 @@
-import { Button, Flex, Heading, Text } from "@chakra-ui/react";
+'use client'
+import { Button, Flex, Heading, Text, useBreakpointValue } from "@chakra-ui/react";
 import React from "react";
 import { CurveSeparator } from "../separator";
 import { Experience } from "./experience";
 
 const Banner = () => {
+  const isMobile = useBreakpointValue(
+    {
+      base: 'outline',
+      md: 'solid',
+    },
+    {
+      // Breakpoint to use when mediaqueries cannot be used, such as in server-side rendering
+      // (Defaults to 'base')
+      fallback: 'md',
+    },
+  )
+
+
   return (
     <Flex
-      mt={{xl : "1em", "2xl":"5em"}}
+      mt={{ xl: "1em", "2xl": "5em" }}
       direction="column"
       gap="1.5em"
       alignItems="center"
       justifyContent="flex-start"
       w="100%"
-      //h={{ xl:"160vh" , "2xl":"130vh"}}
-      h={{ md:"65em" , xl:"80em"}}
+      h={{ base:"80em" , md: "65em", xl: "80em" }}
       overflow="hidden"
       backgroundImage="url('/bg-planet.png')"
       backgroundSize="cover"
@@ -34,15 +47,15 @@ const Banner = () => {
       <Flex
         zIndex="2"
         gap="4px"
-        mt="12em"
+        mt={{base:"8em", md: "12em"}}
         alignItems="center"
         justifyContent="center"
       >
-        <Text fontSize="1.5rem" color="gray">
+        <Text fontSize={{base:"1.2rem" , md:"1.5rem"}} color="gray">
           Convierte tus
         </Text>
         <Text
-          fontSize="1.5rem"
+          fontSize={{base:"1.2rem" , md:"1.5rem"}}
           color="white"
           textDecoration="underline"
           textDecorationColor="blue.500"
@@ -50,26 +63,47 @@ const Banner = () => {
           ideas en apps
         </Text>
       </Flex>
-      <Heading className="animate__animated animate__pulse animate__infinite" fontSize={{md:"2.5rem",xl:"3rem"}} fontWeight="normal" zIndex="2" color="white">
+      <Heading
+        textAlign="center"
+        className="animate__animated animate__pulse animate__infinite"
+        fontSize={{ base: "1.6rem", md: "2.5rem", xl: "3rem" }}
+        fontWeight="normal"
+        zIndex="2"
+        color="white"
+      >
         ACERCA EL FUTURO CON TECNOLOGÍA.
       </Heading>
-      <Text fontSize="1.2rem" zIndex="2" color="white">
+      <Text
+        textAlign="center"
+        fontSize={{ base: "1rem", md: "1.2rem" }}
+        zIndex="2"
+        color="white"
+      >
         Desarrollamos software innovador, seguro y escalable para tu empresa.
       </Text>
-      <Flex zIndex="2" alignItems="center" justifyContent="center" gap="1em">
-        <Button colorScheme="blue" width={{md:"12em",xl:"17em"}} h={{md:"3em",xl:"3.2em"}}>
-          COTIZA TU PROYECTO
+      <Flex w="100%" zIndex="2" alignItems="center" direction={{base:"column" , md:"row"}} justifyContent="center" gap="1em">
+        <Button
+          colorScheme="blue"
+          width={{ base: "80%", md: "12em", xl: "17em" }}
+          h={{ base: "3em", md: "3em", xl: "3.2em" }}
+          isTruncated
+        >
+          {isMobile ? (
+          <>COTIZA <br />TU PROYECTO</>
+        ) : (
+          "COTIZA TU PROYECTO"
+        )}
         </Button>
         <Button
           colorScheme="blackAlpha"
           border="1px solid blue"
-          width={{md:"12em",xl:"17em"}}
-          h={{md:"3em",xl:"3.2em"}}
+          width={{ base: "80%", md: "12em", xl: "17em" }}
+          h={{ base: "3em", md: "3em", xl: "3.2em" }}
         >
           VER SERVICIOS
         </Button>
       </Flex>
-      <Experience/>
+      <Experience />
       <CurveSeparator />
     </Flex>
   );
