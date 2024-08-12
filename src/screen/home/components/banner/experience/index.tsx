@@ -16,14 +16,18 @@ export const Experience = () => {
         <Flex
           direction="column"
           alignItems="center"
+          borderRadius="20px"
           justifyContent="center"
           h="15em"
           w="15em"
-          border="1px solid gray"
+          border=".2px solid gray"
+          p="1em"
         >
-          <Text fontSize="3rem">+15</Text>
+          <Text fontWeight="bolder" fontSize="5rem">
+            +15
+          </Text>
           <Text fontSize="2rem">Años</Text>
-          <Text textAlign="center" fontSize="1.5rem">
+          <Text fontSize=".8rem" textAlign="center">
             Trabajando
           </Text>
         </Flex>
@@ -32,12 +36,16 @@ export const Experience = () => {
           alignItems="center"
           justifyContent="center"
           h="15em"
+          borderRadius="20px"
           w="15em"
-          border="1px solid gray"
+          border=".2px solid gray"
+          p="1em"
         >
-          <Text fontSize="3rem">39</Text>
+          <Text fontWeight="bolder" fontSize="5rem">
+            39
+          </Text>
           <Text fontSize="2rem">Clientes</Text>
-          <Text textAlign="center" fontSize="1.5rem">
+          <Text fontSize=".8rem" textAlign="center">
             Diversos tamaños e industrias
           </Text>
         </Flex>

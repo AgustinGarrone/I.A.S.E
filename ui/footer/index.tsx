@@ -1,4 +1,4 @@
-import { Flex, Img, Text, Button } from "@chakra-ui/react";
+import { Flex, Img, Text, Button, Divider } from "@chakra-ui/react";
 import logo from "../../public/logo.png";
 import locationIcon from "../../public/ubi.svg";
 
@@ -34,9 +34,9 @@ export const Footer = () => {
       >
         <Text>Escribenos a </Text>
         <Text color="lightblue" mb="2">
-          contacto@ejemplo.com
+        infoiasesa@gmail.com
         </Text>
-        <Flex gap="2">
+        <Flex gap="2" mt="2em">
           <Button
             as="a"
             href="https://linkedin.com"
@@ -66,6 +66,7 @@ export const Footer = () => {
           </Button>
         </Flex>
       </Flex>
+      <Divider colorScheme="gray" orientation="vertical" />
 
       {/* Sección 3: Ubicación */}
       <Flex alignItems="center" direction="column" textAlign="center" w="33.3%">
@@ -81,13 +82,12 @@ export const Footer = () => {
           </Text>
         </Flex>
         <Flex direction="column" alignItems="center" justifyContent="center">
-          <Text mt="2">
-            av. A.M. De Justo 740 P.3 Of.1
-          </Text>
+          <Text mt="2">av. A.M. De Justo 740 P.3 Of.1</Text>
         </Flex>
       </Flex>
       {/* Sección 4: Otra ubicación */}
-     
+      <Divider colorScheme="gray" orientation="vertical" />
+
       <Flex alignItems="center" direction="column" textAlign="center" w="33.3%">
         <Flex alignItems="center" justifyContent="center">
           <Img
@@ -101,11 +101,9 @@ export const Footer = () => {
           </Text>
         </Flex>
         <Flex direction="column" alignItems="center" justifyContent="center">
-        <Text mt="2">Av. 38 # 394 La Plata-Bs. As</Text>
+          <Text mt="2">Av. 38 # 394 La Plata-Bs. As</Text>
         </Flex>
       </Flex>
-
-
     </Flex>
   );
 };
