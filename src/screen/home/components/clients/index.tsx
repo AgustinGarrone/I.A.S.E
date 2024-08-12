@@ -10,7 +10,7 @@ export const Clients = () => {
         w="100%"
         gap="2em"
         zIndex="100"
-        h="20em"
+        h={{ md:"18em",xl:"20em"}}
         alignItems="center"
         justifyContent="center"
         backgroundImage="linear-gradient(to bottom, #261a5c, black)">

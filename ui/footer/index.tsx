@@ -38,6 +38,7 @@ export const Footer = () => {
         </Text>
         <Flex gap="2" mt="2em">
           <Button
+          size={{md:"xs" , xl:"l"}}
             as="a"
             href="https://linkedin.com"
             target="_blank"
@@ -47,6 +48,7 @@ export const Footer = () => {
             LinkedIn
           </Button>
           <Button
+          size={{md:"xs" , xl:"l"}}
             as="a"
             href="https://instagram.com"
             target="_blank"
@@ -56,6 +58,7 @@ export const Footer = () => {
             Instagram
           </Button>
           <Button
+          size={{md:"xs" , xl:"l"}}
             as="a"
             href="https://twitter.com"
             target="_blank"
@@ -69,7 +72,7 @@ export const Footer = () => {
       <Divider colorScheme="gray" orientation="vertical" />
 
       {/* Sección 3: Ubicación */}
-      <Flex alignItems="center" justifyContent="center" gap="1em" w="33.3%">
+      <Flex alignItems="center" justifyContent="flex-start" gap="1em" w="33.3%">
         <Flex alignItems="center" justifyContent="center" w="20%" gap="1em">
           <Img
             src={locationIcon.src}
@@ -80,16 +83,16 @@ export const Footer = () => {
           
         </Flex>
         <Flex direction="column" alignItems="flex-start" justifyContent="center">
-        <Text fontSize="1.4rem" fontWeight="bolder">
+        <Text fontSize={{md:"1.1rem" , xl: "1.4rem"}} fontWeight="bolder">
             Buenos Aires
           </Text>
-          <Text mt="2">av. A.M. De Justo 740 P.3 Of.1</Text>
+          <Text mt="2" fontSize={{md:".8rem" , xl:"1rem"}}>av. A.M. De Justo 740 P.3 Of.1</Text>
         </Flex>
       </Flex>
       {/* Sección 4: Otra ubicación */}
       <Divider colorScheme="gray" orientation="vertical" />
 
-      <Flex alignItems="center" justifyContent="center" gap="1em" w="33.3%">
+      <Flex alignItems="center" justifyContent="flex-start"  gap="1em" w="33.3%">
         <Flex alignItems="center" justifyContent="center" w="20%" gap="1em">
           <Img
             src={locationIcon.src}
@@ -100,10 +103,10 @@ export const Footer = () => {
           
         </Flex>
         <Flex direction="column" alignItems="flex-start" justifyContent="center">
-        <Text fontSize="1.4rem" fontWeight="bolder">
+        <Text fontSize={{md:"1.1rem" , xl: "1.4rem"}} fontWeight="bolder">
             La Plata
           </Text>
-          <Text mt="2">av. 38 n 999</Text>
+          <Text mt="2" fontSize={{md:".8rem" , xl:"1rem"}}>av. 38 n 999</Text>
         </Flex>
       </Flex>
     </Flex>

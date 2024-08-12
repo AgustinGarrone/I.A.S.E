@@ -3,7 +3,7 @@ import { Flex, Text } from "@chakra-ui/react";
 export const Experience = () => {
   return (
     <Flex
-      mt={{ xl: "10em", "2xl": "14em" }}
+      mt={{md:"7em", xl: "10em", "2xl": "14em" }}
       zIndex="100"
       color="white"
       direction="column"

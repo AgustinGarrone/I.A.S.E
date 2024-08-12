@@ -13,7 +13,7 @@ const Banner = () => {
       justifyContent="flex-start"
       w="100%"
       //h={{ xl:"160vh" , "2xl":"130vh"}}
-      h={{xl:"80em"}}
+      h={{ md:"65em" , xl:"80em"}}
       overflow="hidden"
       backgroundImage="url('/bg-planet.png')"
       backgroundSize="cover"
@@ -50,21 +50,21 @@ const Banner = () => {
           ideas en apps
         </Text>
       </Flex>
-      <Heading className="animate__animated animate__pulse animate__infinite" fontSize="3rem" fontWeight="normal" zIndex="2" color="white">
+      <Heading className="animate__animated animate__pulse animate__infinite" fontSize={{md:"2.5rem",xl:"3rem"}} fontWeight="normal" zIndex="2" color="white">
         ACERCA EL FUTURO CON TECNOLOGÍA.
       </Heading>
       <Text fontSize="1.2rem" zIndex="2" color="white">
         Desarrollamos software innovador, seguro y escalable para tu empresa.
       </Text>
       <Flex zIndex="2" alignItems="center" justifyContent="center" gap="1em">
-        <Button colorScheme="blue" width="17em" h="3.2em">
+        <Button colorScheme="blue" width={{md:"12em",xl:"17em"}} h={{md:"3em",xl:"3.2em"}}>
           COTIZA TU PROYECTO
         </Button>
         <Button
           colorScheme="blackAlpha"
           border="1px solid blue"
-          width="17em"
-          h="3.2em"
+          width={{md:"12em",xl:"17em"}}
+          h={{md:"3em",xl:"3.2em"}}
         >
           VER SERVICIOS
         </Button>

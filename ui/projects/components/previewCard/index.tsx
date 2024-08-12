@@ -59,13 +59,13 @@ export const PreviewCard: FC<PreviewCardProps> = ({
         padding="4"
         p="1em"
       >
-        <Text fontSize="3rem"  textAlign="center">
+        <Text fontSize={{md:"2rem",xl:"3rem"}}  textAlign="left">
           {company.toUpperCase()}
         </Text>
         <Text fontSize=".8rem" textAlign="left">
           {description}
         </Text>
-        <Flex alignSelf="flex-end">
+        <Flex alignSelf="flex-end" mt="1em">
             <Button rightIcon={<ArrowForwardIcon />}  border="1px solid white" borderRadius="50px" colorScheme="blackAlpha">Descubre Más</Button>
         </Flex>
       </Flex>
