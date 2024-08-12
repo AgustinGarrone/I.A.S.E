@@ -10,17 +10,7 @@ import { MobileNavbar } from "../../../ui/mobileNavbar"
 
 
 export const HomePage = () => {
-    const isMobile = useBreakpointValue(
-        {
-          base: 'outline',
-          md: 'solid',
-        },
-        {
-          // Breakpoint to use when mediaqueries cannot be used, such as in server-side rendering
-          // (Defaults to 'base')
-          fallback: 'md',
-        },
-      )
+    const isMobile = useBreakpointValue({ base: true, md: false });
 
     return (
         <Flex overflowY="hidden" bgColor="black" direction="column" alignItems="center" width="100%" minH="100vh">

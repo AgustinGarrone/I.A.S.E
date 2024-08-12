@@ -5,17 +5,8 @@ import { CurveSeparator } from "../separator";
 import { Experience } from "./experience";
 
 const Banner = () => {
-  const isMobile = useBreakpointValue(
-    {
-      base: 'outline',
-      md: 'solid',
-    },
-    {
-      // Breakpoint to use when mediaqueries cannot be used, such as in server-side rendering
-      // (Defaults to 'base')
-      fallback: 'md',
-    },
-  )
+  const isMobile = useBreakpointValue({ base: true, md: false });
+
 
 
   return (
