@@ -26,12 +26,12 @@ export const Specialties = () => {
             gap="1em"
             key={index}
             alignItems="center"
-            justifyContent="center"
+            justifyContent="flex-start"
             p={1}
             border="1px solid gray"
             borderRadius="15px"
-            h={{ md: "3.4em" }}
-            w={{ base: "100%", md: "20em" }}
+            h={{ md: "3.4em" , xl: "4em"}}
+            w={{ base: "100%", md: "20em" , xl:"20em" }}
             bg={s.color}
             color="white"
           >
