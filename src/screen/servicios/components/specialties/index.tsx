@@ -8,7 +8,7 @@ export const Specialties = () => {
       w="80%"
       direction="column"
       alignItems="center"
-      mt={{ base: "20em", md: "6em", "2xl": "0" }}
+      mt={{ base: "10em", md: "6em", "2xl": "0" }}
       justifyContent="center"
       gap="3em"
     >
