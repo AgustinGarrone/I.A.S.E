@@ -1,7 +1,12 @@
 import { Box, Button, Flex, Img, Link } from "@chakra-ui/react";
 import logo from "../../public/logo.png";
+import useRedirectToForm from "@/hooks/useRedirect";
 
 export const Navbar = () => {
+
+  const redirectToForm = useRedirectToForm();
+
+
   return (
     <Flex
       as="nav"
@@ -17,7 +22,7 @@ export const Navbar = () => {
       backgroundColor="black"
       //backgroundColor="#0e3748"
       boxShadow="sm"
-      zIndex="1000"
+      zIndex="10000"
       color="white"
     >
       <Flex alignItems="center" justifyContent="center" gap="1em" h="100%">
@@ -41,7 +46,7 @@ export const Navbar = () => {
         <Box as="li">
           <Link href="/proyectos-exitosos">Proyectos exitosos</Link>
         </Box>
-        <Button colorScheme="teal" variant="solid">
+        <Button colorScheme="teal" variant="solid" onClick={redirectToForm}>
           Cotizar Proyecto
         </Button>
       </Box>

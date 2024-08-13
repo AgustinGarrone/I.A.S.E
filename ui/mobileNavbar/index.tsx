@@ -11,9 +11,11 @@ import {
 } from "@chakra-ui/react";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import logo from "../../public/logo.png";
+import useRedirectToForm from "@/hooks/useRedirect";
 
 export const MobileNavbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const redirectToForm = useRedirectToForm();
 
   return (
     <Flex
@@ -89,7 +91,10 @@ export const MobileNavbar = () => {
             colorScheme="teal"
             variant="solid"
             width="100%"
-            onClick={onClose}
+            onClick={() => {
+              redirectToForm()
+              onClose()
+            }}
           >
             Cotizar Proyecto
           </Button>

@@ -7,6 +7,7 @@ import { Services } from "../../../ui/services";
 import { Footer } from "../../../ui/footer";
 import { SuccessfulProjects } from "../../../ui/projects";
 import { MobileNavbar } from "../../../ui/mobileNavbar";
+import { Cta } from "../../../ui/cta";
 
 export const HomePage = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
@@ -24,6 +25,7 @@ export const HomePage = () => {
       <Banner />
       <Clients />
       <Services />
+      <Cta/>
       <SuccessfulProjects />
       <Footer />
     </Flex>
