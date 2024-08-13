@@ -2,6 +2,9 @@ import { Flex, useBreakpointValue } from "@chakra-ui/react";
 import { MobileNavbar } from "../../../ui/mobileNavbar";
 import { Navbar } from "../../../ui/navbar";
 import { Footer } from "../../../ui/footer";
+import { Summary } from "./components/summary";
+import { DifferentIcons } from "./components/differentIcons";
+import { Cta } from "../../../ui/cta";
 
 export const AboutUsPage = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
@@ -16,6 +19,9 @@ export const AboutUsPage = () => {
       direction="column"
     >
       {isMobile ? <MobileNavbar /> : <Navbar />}
+      <Summary/>
+      <DifferentIcons/>
+      <Cta/>
       <Footer/>
     </Flex>
   );

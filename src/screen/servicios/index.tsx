@@ -6,6 +6,7 @@ import { Services } from "../../../ui/services";
 import { Specialties } from "./components/specialties";
 import { SuccessfulProjects } from "../../../ui/projects";
 import { MobileNavbar } from "../../../ui/mobileNavbar";
+import { Cta } from "../../../ui/cta";
 
 export const ServicePage = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
@@ -23,6 +24,7 @@ export const ServicePage = () => {
       <Box h="7em" bg="black" />
       <Services />
       <Specialties />
+      <Cta/>
       <SuccessfulProjects />
       <Footer />
     </Flex>
