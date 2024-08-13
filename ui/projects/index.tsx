@@ -2,8 +2,12 @@ import { Button, Flex, Grid, GridItem } from "@chakra-ui/react";
 import { PreviewCard } from "./components/previewCard";
 import { PREVIEW_PROJECTS_DATA } from "./data";
 import { MenuLabel } from "../menuLabel";
+import useRedirect from "@/hooks/useRedirect";
 
 export const SuccessfulProjects = () => {
+
+  const {redirectToProjects} = useRedirect()
+
   return (
     <Flex
       bg="black"
@@ -25,30 +29,30 @@ export const SuccessfulProjects = () => {
         p={4}
       >
        <GridItem
-        colSpan={1} // Ocupa una columna en dispositivos móviles
-        rowSpan={{ base: 1, md: 2 }} // Ocupa una fila en móviles, dos filas en md+
-        gridArea={{ base: "1 / 1 / 2 / 2", md: "1 / 1 / 3 / 2" }} // Ajuste para ocupar toda la primera columna
+        colSpan={1} 
+        rowSpan={{ base: 1, md: 2 }} 
+        gridArea={{ base: "1 / 1 / 2 / 2", md: "1 / 1 / 3 / 2" }} 
       >
         <PreviewCard {...PREVIEW_PROJECTS_DATA[0]} />
       </GridItem>
 
       <GridItem
-        colSpan={1} // Ocupa una columna en dispositivos móviles
-        rowSpan={1} // Ocupa una fila en móviles
-        gridArea={{ base: "2 / 1 / 3 / 2", md: "1 / 2 / 2 / 3" }} // Ajuste para ocupar la segunda columna en dispositivos móviles
+        colSpan={1} 
+        rowSpan={1} 
+        gridArea={{ base: "2 / 1 / 3 / 2", md: "1 / 2 / 2 / 3" }} 
       >
         <PreviewCard {...PREVIEW_PROJECTS_DATA[1]} />
       </GridItem>
 
       <GridItem
-        colSpan={1} // Ocupa una columna en dispositivos móviles
-        rowSpan={1} // Ocupa una fila en móviles
-        gridArea={{ base: "3 / 1 / 4 / 2", md: "2 / 2 / 3 / 3" }} // Ajuste para ocupar la segunda columna en dispositivos móviles
+        colSpan={1} 
+        rowSpan={1} 
+        gridArea={{ base: "3 / 1 / 4 / 2", md: "2 / 2 / 3 / 3" }}
       >
         <PreviewCard {...PREVIEW_PROJECTS_DATA[2]} />
       </GridItem>
       </Grid>
-      <Button mb="4em" colorScheme="blue">Ver más proyectos</Button>
+      <Button onClick={redirectToProjects} mb="4em" colorScheme="blue">Ver más proyectos</Button>
     </Flex>
   );
 };

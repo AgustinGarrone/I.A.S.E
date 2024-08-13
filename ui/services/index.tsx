@@ -3,8 +3,12 @@ import { Button, Flex, Text } from "@chakra-ui/react";
 import { ServiceCard } from "./card";
 import { SERVICES } from "./data";
 import { MenuLabel } from "../menuLabel";
+import useRedirect from "@/hooks/useRedirect";
 
 export const Services = () => {
+
+  const {redirectToServicios} = useRedirect()
+
   return (
     <Flex
       bg="black"
@@ -22,7 +26,7 @@ export const Services = () => {
           return <ServiceCard {...s} key={index} />;
         })}
       </Flex>
-      <Button w="13em" h="3em">
+      <Button w="13em" h="3em" onClick={redirectToServicios}>
         Ver más Información
       </Button>
     </Flex>

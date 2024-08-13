@@ -3,11 +3,11 @@ import { Button, Flex, Heading, Text, useBreakpointValue } from "@chakra-ui/reac
 import React from "react";
 import { CurveSeparator } from "../separator";
 import { Experience } from "./experience";
-import useRedirectToForm from "@/hooks/useRedirect";
+import useRedirect from "@/hooks/useRedirect";
 
 const Banner = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
-  const redirectToForm = useRedirectToForm()
+  const {redirectToForm , redirectToServicios} = useRedirect()
 
 
   return (
@@ -92,6 +92,7 @@ const Banner = () => {
           border="1px solid blue"
           width={{ base: "80%", md: "12em", xl: "17em" }}
           h={{ base: "3em", md: "3em", xl: "3.2em" }}
+          onClick={redirectToServicios}
         >
           VER SERVICIOS
         </Button>

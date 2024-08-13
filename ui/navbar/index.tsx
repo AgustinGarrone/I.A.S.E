@@ -1,10 +1,10 @@
 import { Box, Button, Flex, Img, Link } from "@chakra-ui/react";
 import logo from "../../public/logo.png";
-import useRedirectToForm from "@/hooks/useRedirect";
+import useRedirect from "@/hooks/useRedirect";
 
 export const Navbar = () => {
 
-  const redirectToForm = useRedirectToForm();
+  const {redirectToForm} = useRedirect();
 
 
   return (

@@ -11,11 +11,11 @@ import {
 } from "@chakra-ui/react";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import logo from "../../public/logo.png";
-import useRedirectToForm from "@/hooks/useRedirect";
+import useRedirect from "@/hooks/useRedirect";
 
 export const MobileNavbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const redirectToForm = useRedirectToForm();
+  const {redirectToForm} = useRedirect();
 
   return (
     <Flex

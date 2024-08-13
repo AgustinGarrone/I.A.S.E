@@ -1,13 +1,21 @@
 import { useRouter } from "next/navigation";
 
-const useRedirectToForm = () => {
+const useRedirect = () => {
   const router = useRouter();
 
-  const redirectToCotiza = () => {
+  const redirectToForm = () => {
     router.push("/cotiza-tu-proyecto");
   };
 
-  return redirectToCotiza;
+  const redirectToServicios = () => {
+    router.push("/servicios");
+  };
+
+  const redirectToProjects = () => {
+    router.push("/proyectos-exitosos");
+  };
+
+  return { redirectToForm, redirectToServicios , redirectToProjects};
 };
 
-export default useRedirectToForm;
+export default useRedirect;

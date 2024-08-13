@@ -1,8 +1,8 @@
-import useRedirectToForm from "@/hooks/useRedirect";
+import useRedirect from "@/hooks/useRedirect";
 import { Button, Flex, Text } from "@chakra-ui/react";
 
 export const Cta = () => {
-  const redirectToForm = useRedirectToForm();
+  const {redirectToForm} = useRedirect();
 
   return (
     <Flex
