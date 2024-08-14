@@ -6,7 +6,7 @@ import { AboutUsTabs } from "./tabs"
 export const AboutUsContainer = () => {
 
     return (
-        <Flex w="85%" h="45em" mb="10em" alignItems="center" justifyContent="center" gap="1.5em">
+        <Flex w="85%" h="50em" mb="10em" alignItems="flex-start" justifyContent="center" gap="1.5em">
             <DifferentIcons/>
             <AboutUsTabs/>
         </Flex>

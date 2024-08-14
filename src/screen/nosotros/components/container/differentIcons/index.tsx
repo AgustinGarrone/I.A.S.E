@@ -35,11 +35,15 @@ export const DifferentIcons = () => {
       h="100%"
       justifyContent="center"
       w="50%"
+      gap="4em"
     >
+      
+      <Text color="violet" alignSelf="flex-start" justifySelf="flex-start" fontSize={{ base: "2rem", md: "2.3rem" }}>
+        LO QUE NOS HACE DIFERENTES
+      </Text>
       {data.map((data, index) => {
         return (
           <Flex
-            mt="5em"
             h="7em"
             key={index}
             gap="1em"

@@ -20,12 +20,6 @@ export const AboutUsPage = () => {
     >
       {isMobile ? <MobileNavbar /> : <Navbar />}
       <Summary/>
-      
-      <Flex w="80%">
-      <Text color="violet" alignSelf="flex-start" fontSize={{ base: "2rem", md: "2.3rem" }}>
-        LO QUE NOS HACE DIFERENTES
-      </Text>
-      </Flex>
       <AboutUsContainer/>
       <Cta/>
       <Footer/>
