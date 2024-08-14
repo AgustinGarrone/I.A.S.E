@@ -11,6 +11,7 @@ export const Specialties = () => {
       mt={{ base: "10em", md: "6em", "2xl": "0" }}
       justifyContent="center"
       gap="3em"
+      mb="4em"
     >
       <Text alignSelf="flex-start" color="white" fontSize="2rem">
         ESPECIALIDADES TÉCNICAS
