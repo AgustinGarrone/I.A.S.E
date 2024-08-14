@@ -23,14 +23,14 @@ export const Form = () => {
 
   const [alert, setAlert] = useState({ type: "", visible: false });
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     const response = await fetch("/api/sendEmail", {
       method: "POST",
@@ -142,7 +142,7 @@ export const Form = () => {
       </FormControl>
 
       <Button
-        colorScheme="blue"
+        colorScheme="teal"
         onClick={handleSubmit}
         width="40%"
         h="3em"

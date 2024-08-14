@@ -8,9 +8,10 @@ export const Summary = () => {
       alignItems="center"
       color="white"
       gap="1em"
+      mt="3em"
       justifyContent="center"
       w="100%"
-      h="30em"
+      h="25em"
     >
       <MenuLabel title="SOBRE NOSOTROS" />
       <Text ml="2.1em" w="80%">
