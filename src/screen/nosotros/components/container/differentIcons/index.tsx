@@ -1,7 +1,7 @@
 import { Flex, Img, Text } from "@chakra-ui/react";
-import experts from "../../../../../public/experts.svg";
-import teamwork from "../../../../../public/teamwork.svg";
-import quality from "../../../../../public/quality.svg";
+import experts from "../../../../../../public/experts.svg";
+import teamwork from "../../../../../../public/teamwork.svg";
+import quality from "../../../../../../public/quality.svg";
 
 export const DifferentIcons = () => {
   const data = [
@@ -32,13 +32,10 @@ export const DifferentIcons = () => {
     <Flex
       alignItems="flex-start"
       direction="column"
-      h="45em"
+      h="100%"
       justifyContent="center"
-      w="80%"
+      w="50%"
     >
-      <Text color="violet" fontSize={{ base: "2rem", md: "2.3rem" }}>
-        LO QUE NOS HACE DIFERENTES
-      </Text>
       {data.map((data, index) => {
         return (
           <Flex
