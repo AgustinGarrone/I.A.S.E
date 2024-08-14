@@ -96,7 +96,7 @@ export const MobileNavbar = () => {
               onClose()
             }}
           >
-            Cotizar Proyecto
+         Contactanos
           </Button>
         </Stack>
       </Box>

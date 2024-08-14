@@ -47,7 +47,7 @@ export const Navbar = () => {
           <Link href="/proyectos-exitosos">Proyectos exitosos</Link>
         </Box>
         <Button colorScheme="teal" variant="solid" onClick={redirectToForm}>
-          Cotizar Proyecto
+          Contactanos
         </Button>
       </Box>
     </Flex>

@@ -4,14 +4,13 @@ import {
   Input,
   Textarea,
   Button,
-  useDisclosure,
   Alert,
   AlertIcon,
   Box,
   AlertTitle,
   AlertDescription,
 } from "@chakra-ui/react";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 export const Form = () => {
   const [formData, setFormData] = useState({

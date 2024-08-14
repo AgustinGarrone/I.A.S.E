@@ -18,7 +18,6 @@ export const ProjectList = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Obtén el CSV usando Axios
         const response = await axios.get(url);
         Papa.parse(response.data, {
           header: true,
@@ -76,9 +75,9 @@ export const ProjectList = () => {
         w="80%"
         alignItems="center"
         direction={{ base: "column", md: "row" }}
-        justifyContent="flex-start"
+        justifyContent="space-around"
         wrap="wrap"
-        gap="2em"
+        gap="4em"
       >
         {projectData.map((project, index) => {
           console.log(project.title);

@@ -44,7 +44,7 @@ const Banner = () => {
         justifyContent="center"
       >
         <Text fontSize={{base:"1.2rem" , md:"1.5rem"}} color="gray">
-          Convierte tus
+          Obras y servicios de excelencia
         </Text>
         <Text
           fontSize={{base:"1.2rem" , md:"1.5rem"}}
@@ -52,7 +52,7 @@ const Banner = () => {
           textDecoration="underline"
           textDecorationColor="blue.500"
         >
-          ideas en apps
+          en ingeniería
         </Text>
       </Flex>
       <Heading
@@ -63,7 +63,7 @@ const Banner = () => {
         zIndex="2"
         color="white"
       >
-        ACERCA EL FUTURO CON TECNOLOGÍA.
+       ENERGÍA QUE IMPULSA TUS IDEAS
       </Heading>
       <Text
         textAlign="center"
@@ -71,7 +71,7 @@ const Banner = () => {
         zIndex="2"
         color="white"
       >
-        Desarrollamos software innovador, seguro y escalable para tu empresa.
+        Ofrecemos soluciones integrales en ingeniería eléctrica para potenciar tu negocio.
       </Text>
       <Flex w="100%" zIndex="2" alignItems="center" direction={{base:"column" , md:"row"}} justifyContent="center" gap="1em">
         <Button
